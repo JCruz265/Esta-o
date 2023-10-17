@@ -2,6 +2,7 @@
 from datetime import datetime, date
 #apresentação
 print('\n\t\t\t --Verificador de Estação--\n')
+print('Digite a data do seu nascimento')
 year = int(input('Digite o ano: '))
 month = int(input('Digite o mês: '))
 day = int(input('Digite o dia: '))
@@ -11,12 +12,12 @@ season = [datetime(year,3,20),datetime(year,6,21),
           datetime(year+1,3,20)]
 #
 if data > season[0] and data < season[1]:
-    print('É Outono')
+    print('Você nasceu no Outono')
 elif data > season[1] and data < season[2]:
-    print('É Inverno')
+    print('Você nasceu no  Inverno')
 elif data > season[2] and data < season[3]:
-    print('É Primavera')
+    print('Você nasceu na Primavera')
 else:
-    print('É Verão')
+    print('Você nasceu no Verão')
 
 
